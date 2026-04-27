@@ -23,8 +23,37 @@
     <!--Daisy UI CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Style -->
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
 </head>
 <body>
-    <p class="text-4xl bg-red-700">Hello Tailwind css</p>
+   <!---Login page html design-->
+   <div class="hero bg-base-200 min-h-screen">
+      
+    <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl p-5">
+      <div class="flex flex-col justify-center items-center space-y-1 pt-10">
+        <img src="assets/github-logo.png" class="pb-5" alt="">
+        <h2 class="text-[#000000] text-2xl font-bold">GitHub Issues Tracker</h2>
+        <p class="text-[#64748B] text-base">Sign in to manage your issues</p>
+      </div>
+      <div class="card-body ">
+        <fieldset class="fieldset  space-y-2 ">
+          <label class="label text-[#1F2937] text-base font-medium">Username</label>
+          <input id="user-input" type="text" maxlength="5" class="input w-full" placeholder="Enter Your Username" />
+          <span class="text-primary text-[14px]">Default: admin</span>
+          <label class="label  text-[#1F2937] text-base font-medium">Password</label>
+          <input id="user-pass" type="password" maxlength="8" class="input w-full" placeholder="Enter Your 8 digit Password" />
+          <span class="text-primary text-[14px]">Default: admin123</span>
+
+          <button id="login-btn" class="btn btn-primary mt-4">Sign In</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

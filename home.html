@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -106,10 +106,43 @@
             <p class="font-semibold text-base">Open</p>
           </div>
           <div class="flex gap-2">
-            <img src="assets/closed.png" alt=""/>
+            <img src="assets/Closed- Status .png" alt=""/>
             <p class="font-semibold text-base">Closed</p>
           </div>
         </div>
+      </section>
+
+           <!-- Card Container -->
+      <section
+        id="card-container"
+        class="w-12/12 md:w-10/12 mx-auto p-5 md:p-10 bg-gray-200"
+      >
+        <!-- All card container -->
+        <div
+          id="all-card-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+        ></div>
+        <!-- loader -->
+        <div
+          id="loader"
+          class="hidden flex justify-center items-center h-[60vh] w-full"
+        >
+          <span class="loading loading-dots loading-xl"></span>
+        </div>
+      </section>
+
+      <!-- modal -->
+      <section>
+        <dialog id="word_modal" class="modal">
+          <div class="modal-box">
+            <div id="modal-container"></div>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn btn-primary">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
 
 

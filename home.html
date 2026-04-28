@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github issue Tracker</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind+DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style -->
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-white">
+      <div
+        class="navbar bg-base-100 shadow-sm flex justify-between items-center">
+        <div class="flex justify-between items-center">
+          <a class="btn btn-ghost bg-transparent border-0"
+            ><img class="w-10" src="assets/github-logo.png" alt=""
+          /></a>
+          <h1
+            class="font-semibold text-[#1F2937] text-xl md:text-2xl wrap-break-word"
+          >
+            Github Issues Tracker
+          </h1>
+        </div>
+        <div class="flex gap-2 pr-4">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search Issuse"
+            class="input input-bordered w-24 md:w-auto"
+          />
+          <button
+            id="search-btn"
+            onclick="searchIssues()"
+            class="btn btn-primary"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

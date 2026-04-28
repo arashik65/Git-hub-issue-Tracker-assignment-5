@@ -4,6 +4,7 @@ loginBtn.addEventListener("click", () => {
   const userPass = document.getElementById("user-pass").value;
   if (userInput === "admin" && userPass === "admin123") {
     alert("Login Successful");
+     window.location.assign("home.html");
   } else {
     alert("Enter the valid user & password");
   }

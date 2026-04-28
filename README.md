@@ -91,6 +91,38 @@
     - 5️⃣ What are template literals?
 
 
+
+Ans the Question:
+
+<!-- What is the difference between var, let, and const? -->
+
+var is function-scoped, while let and const are block-scoped.
+let cannot be redeclared, but it can be reassigned.
+
+<!-- What is the spread operator (...)? -->
+
+The spread operator (...) is used to copy or expand elements of an array or properties of an object.
+
+<!-- What is the difference between map(), filter(), and forEach()? -->
+map() is used to modify each element of an array and returns a new array.
+forEach() is used to loop through an array, but it does not return anything.
+filter() is used to check a condition and returns a new array with only the elements that match the condition.
+
+<!-- What is an arrow function? -->
+
+An arrow function is a shorter way to write a function using =>.
+
+<!--  What are template literals? -->
+
+Template literals are like normal strings, but they allow you to add dynamic values using ${}.
+
+
+
+
+
+
+
+
 ---
 
 ## 🛠️ Technology Stack
